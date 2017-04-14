@@ -1,1 +1,28 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximun-scale=1.0,minimun-scale=1.0">
+  <title>JS Bin</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="style/sheet" href="./typo.css"/>
+  <style type="text/css">
+    body{font-size:16px;}
+    img{max-width:100%;}
+  </style>
+</head>
+<body>
+  <div id='con'>
+  # 我的第二篇文章
+  ## 将html转化为markdown文件
+  <img src="http://pic.qiantucdn.com/58pic/13/20/69/69958PICUxF.jpg!qtwebp226"/>
+  </div>
+  <script>
+    var html =document.getElementById('con').innerHTML;
+var mark= marked(html);
+   document.getElementById('con').innerHTML=html;
+  </script>
+
+</body>
+</html>
