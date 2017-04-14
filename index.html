@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>我的github账号开通了</title>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="style/sheet" href="./typo.css"/>
 </head>
 <body>
-看看我的第一个页面,haha 
+  <div id='con'></div>
+  <script>
+      var mark=`
+  # 123
+  ## 345
+[百度](https://www.baidu.com)
+
+![](http://pic.qiantucdn.com/58pic/13/20/69/69958PICUxF.jpg!qtwebp226)
+`
+var html= marked(mark);
+  document.getElementById('con').innerHTML =html;
+  </script>
+
 </body>
 </html>
